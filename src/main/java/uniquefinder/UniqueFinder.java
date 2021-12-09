@@ -12,7 +12,7 @@ public class UniqueFinder {
             throw new IllegalArgumentException("Text is null.");
         } else {
             for (int i = 0; i < word.length(); i++) {
-                if (containsList(result, word.charAt(i)) == false) {
+                if (!containsList(result, word.charAt(i))) {
                     result.add(word.charAt(i));
                 }
             }
